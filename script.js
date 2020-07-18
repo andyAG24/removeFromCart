@@ -1,3 +1,7 @@
+const config = {
+    siteUrl: '' // URL сайта
+};
+
 function removeItem(skuId) {
     var xhr = new XMLHttpRequest();
     var requestUrl = `${config.siteUrl}/.wf_graphql/apollo`
