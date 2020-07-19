@@ -23,5 +23,5 @@ function removeItem(skuId) {
 var removeFromCartButton = $('.removefromcartbutton.w-button');
 $(removeFromCartButton).each(() => {
     let skuId = $(this).parent().attr('data-commerce-sku-id');
-    removeItem(skuId);
+    $(this).on("click", () => removeItem(skuId));
 });
